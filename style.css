@@ -1,0 +1,247 @@
+.center {
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+
+}
+
+.composition__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.block__item {
+    background-color: var(--colorOne);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border:2px solid linear-gradient(black,green);
+    box-shadow: 8px 8px 8px 5px var(--colorTwo);
+}
+
+.block__img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.block__text {
+    text-align: center;
+}
+
+.promoTwo {
+    background: linear-gradient(to top, #a580a6, 20%, #d2c9d4);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.nameProduct,
+.price {
+    font-size: var(--XL);
+    text-align: center;
+    font-family: var(--fontOpen);
+}
+
+.form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list {
+    list-style-type: square;
+    list-style-image: url(./img/pngwing.com\ \(4\).png);
+    list-style-position: inside;
+    padding: 10px 10px;
+    font-size: var(--S);
+    line-height: var(--M);
+    font-family: var(--fontFranclin);
+    font-weight: 300;
+}
+
+.promo,
+.other,
+.promoTwo,
+.formOrder,
+.composition {
+    margin-bottom: 80px;
+
+}
+
+p {
+    padding: 10px 10px;
+    font-size: var(--S);
+    line-height: var(--M);
+    font-family: var(--fontFranclin);
+    font-weight: 300;
+}
+
+.img__big {
+    width: 50%;
+
+}
+
+.img__prod {
+    width: 120px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.carousel-container {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    border-radius: 20px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--S);
+    background-color: var(--colorTwo);
+    color: white;
+}
+
+.carousel-slide:nth-child(even) {
+    background-color: var(--colorOne);
+}
+
+.carousel-button {
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--colorThree);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    top: 10px;
+}
+
+.carousel-button.next {
+    bottom: 10px;
+}
+
+.img__smal {
+    margin: 10px;
+}
+
+input,button{
+    padding: 10px 20px;
+    border: 1px solid var(--colorFive);
+    border-radius:10px ;
+}
+button{
+    background: linear-gradient(to top, #a580a6 , 30% ,  #ccc );
+    color: #fff;
+}
+
+@media (max-width: 400px) {
+    h1{
+        color: var(--colorFive);
+    }
+    body {
+        background-color: var(--colorOne);
+        font-size: 8px;
+    }
+
+    .center {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .carousel-button.next {
+        transform: translate(10px);
+    }
+
+    .promo,
+    .other,
+    .promoTwo,
+    .formOrder,
+    .composition {
+        margin-bottom: 40px;
+
+
+    }
+
+    .promoTwo {
+        background: linear-gradient(to top, #947cac, 20%, #a77da8);
+        padding: 20px;
+        border-radius: 20px;
+        color: #fff;
+    }
+    .carousel-slide::before{
+        border: 2px solid var(--colorFour);
+    }
+    input,button{
+        padding: 10px 20px;
+        border: 1px solid var(--colorFive);
+        border-radius:10px ;
+    }
+    button{
+        background: linear-gradient(to top, #a580a6 , 50% ,  #ccc );
+    }
+    .carousel{
+        background-color: var(--colorOne);
+    }
+    .block__item{
+        background: linear-gradient(to top, #a580a6 , 50% ,  #ccc );
+       
+        box-shadow: 8px 8px 8px 5px var(--colorThree);
+    }
+
+}

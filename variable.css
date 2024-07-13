@@ -1,0 +1,39 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+
+/* font size */
+:root {
+    --S: 15px;
+    --M: 20px;
+    --L: 25px;
+    --XL: 30px;
+
+}
+
+/* font-family */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fontOpen: "Open Sans", sans-serif;
+    --fontFranclin: "Libre Franklin", sans-serif;
+}
+
+/* color */
+:root {
+    --colorFive: #4f3466;
+    --colorFour: #947cac;
+    --colorThree: #a580a6;
+    --colorTwo: #cabcd7;
+    --colorOne: #d2c9d4;
+}
